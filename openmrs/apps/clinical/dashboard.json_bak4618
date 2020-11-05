@@ -1,0 +1,511 @@
+{
+  "shouldOverRideConfig": true,
+  "general": {
+    "displayByDefault": true,
+    "maxRecentlyViewedPatients": 1,
+    "printing": {
+      "title": "EndTB General Patient Dashboard",
+      "header": "Treatment Dashboard",
+      "logo": "../images/bahmniLogo.png",
+      "showNameAndImage": true
+    },
+    "sections": {
+      "tbTreatmentsDetails": {
+        "translationKey": "DASHBOARD_TITLE_TB_TREATMENTS_DETAILS",
+        "type": "drugOrderDetails",
+        "showDetailsButton": true,
+        "displayOrder": 1,
+        "dashboardConfig": {
+          "showOnlyActive": true,
+          "drugConceptSet": "All TB Drugs"
+        }
+      },
+      "nontbTreatmentsDetails": {
+        "translationKey": "DASHBOARD_TITLE_NONTB_TREATMENTS_DETAILS",
+        "type": "drugOrderDetails",
+        "showDetailsButton": true,
+        "displayOrder": 3,
+        "dashboardConfig": {
+          "showOnlyActive": true,
+          "drugConceptSet": "All Other Drugs"
+        }
+      },
+      "bacteriologyResults": {
+        "translationKey": "DASHBOARD_TITLE_BACTERIOLOGY_RESULTS_KEY",
+        "type": "bacteriologyResultsControl",
+        "orderType": "",
+        "displayOrder": 18,
+        "dashboardConfig": {
+          "conceptNames": [
+            "BACTERIOLOGY CONCEPT SET"
+          ]
+        }
+      },
+      "baseline": {
+        "type": "forms",
+        "displayOrder": 2,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Baseline Template",
+          "Treatment Initiation Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_BASELINE_FORMS"
+      },
+	"followup": {
+        "type": "forms",
+        "displayOrder": 4,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Followup Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_FOLLOWUP_FORMS"
+      },
+      "Monthly Treatment Completeness": {
+        "type": "forms",
+        "displayOrder": 5,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Monthly Treatment Completeness Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_MTC_FORMS"
+      },
+      "labs Results Hematology": {
+        "type": "forms",
+        "displayOrder": 6,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Lab Results Hemotology Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_LAB_HEMATOLOGY_FORMS"
+      },      
+	"labs Results Biochemistry": {
+        "type": "forms",   
+        "displayOrder": 7,
+        "dashboardConfig": {
+          "title": null,   
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Lab Results Biochemistry Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_LAB_BIOCHEMISTRY_FORMS"
+      }, 
+      "labs Results Serology": {
+        "type": "forms", 
+        "displayOrder": 8, 
+        "dashboardConfig": { 
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Lab Results Serology Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_LAB_SEROLOGY_FORMS"
+      },
+      "Lab Results Pregnancy": {
+        "type": "forms",
+        "displayOrder": 9,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Lab Results Pregnancy Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_LAB_PREGNANCY_FORMS"
+      },
+      "Lab Results Other Tests": {
+        "type": "forms",
+        "displayOrder": 10,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Lab Results Other Tests Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_LAB_OTHER_FORMS"
+      },
+      "Audiometry": {
+        "type": "forms",
+        "displayOrder": 11,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Audiometry Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_LAB_AUDIOMETRY_FORMS"
+      },
+      "Electrocardiogram": {
+        "type": "forms",
+        "displayOrder": 12,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Electrocardiogram Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_LAB_ELECTROCARDIOGRAM_FORMS"
+      },
+      "Xray": {
+        "type": "forms",
+        "displayOrder": 13,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Xray Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_LAB_XRAY_FORMS"
+      },
+      "Performance Status": {
+        "type": "forms",
+        "displayOrder": 14,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Performance Status Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_LAB_PERFORMANCE_STATUS_FORMS"
+      },
+      "adverseEventsForms": {
+        "type": "forms",
+        "displayOrder": 15,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Adverse Events Template",
+          "Serious Adverse Events Template",
+          "Pregnancy Report Form Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_ADVERSE_EVENTS_FORMS"
+      },
+      "adverseEvents": {
+        "translationKey": "DASHBOARD_TITLE_ADVERSE_EVENTS_SUMMARY",
+        "type": "obsToObsFlowSheet",
+        "headingConceptSource": "Abbreviation",
+        "dataConceptSource": "Abbreviation",
+        "displayType": "Full-Page",
+        "displayOrder": 30,
+        "dashboardConfig": {
+          "isEditable": true,
+          "groupByConcept": "AE Form, AE term comprehensive list",
+          "templateName": "Adverse Events Template",
+          "conceptNames": [
+            "AE Form, Other AE term",
+            "AE Form, AE ID number",
+            "AE Form, SAE Case Number",
+            "AE Form, Date of AE onset",
+            "AE Form, Date of AE report",
+            "AE Form, AE review date",
+            "AE Form, Date of AE Outcome",
+            "AE Form, AE outcome"  
+	]
+        }
+      },
+      "seriousAdverseEvents": {
+        "translationKey": "DASHBOARD_TITLE_SERIOUS_ADVERSE_EVENTS_SUMMARY",
+        "type": "obsToObsFlowSheet",
+        "headingConceptSource": "Abbreviation",
+        "dataConceptSource": "Abbreviation",
+        "displayType": "Full-Page",
+        "displayOrder": 31,
+        "dashboardConfig": {
+          "isEditable": true,
+          "groupByConcept": "SAE Form, SAE term comprehensive AE list",
+          "templateName": "Serious Adverse Events Template",
+          "obsDelimiter": "\n",
+          "conceptNames": [
+            "SAE Form, Other SAE term",
+            "SAE Form, SAE ID number",
+            "SAE Form, AE ID if previously reported as AE",
+            "SAE Form, Event onset date",
+            "SAE Form, Date of SAE report",
+            "SAE Form, Date event became serious",
+            "SAE Form, Event end date",
+            "SAE Form, SAE outcome"  
+	]
+        }
+      },
+      "hospitalization": {
+        "type": "forms",
+        "displayOrder": 27,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Hospital Admission Notification Template",
+          "Hospital Discharge Summary Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_HOSPITALIZATION_FORMS"
+      },
+      "outcome": {
+        "type": "forms",
+        "displayOrder": 29,
+        "dashboardConfig": {
+          "title": null,
+          "maximumNoOfVisits": 100
+        },
+        "formGroup": [
+          "Outcome End of Treatment Template",
+          "6 month Post Treatment Outcome Template"
+        ],
+        "translationKey": "DASHBOARD_TITLE_OUTCOME_FORMS"
+      },
+      "documentsObsDisplay": {
+        "isObservation": true,
+        "displayType": "Full-Page",
+        "dashboardConfig": {
+          "showGroupDateTime": false,
+          "persistOrderOfConcepts": true,
+          "conceptNames": [
+                "Documents Template"
+        ]
+        },
+        "displayOrder": 31,
+        "translationKey": "DASHBOARD_TAB_PATIENT_DOCUMENTS_KEY"
+	}
+    },
+    "translationKey": "DASHBOARD_TAB_GENERAL_KEY"
+  },
+  "summary": {
+    "displayByDefault": true,
+    "maxRecentlyViewedPatients": 10,
+    "printing": {
+      "title": "EndTB Patient Dashboard",
+      "header": "Patient Summary",
+      "logo": "../images/bahmniLogo.png"
+    },
+    "sections": {
+	"adverseEvents": {
+        "translationKey": "SUMMARY_TITLE_ADVERSE_EVENTS",
+        "type": "obsToObsFlowSheet",
+        "displayType": "Full-Page",
+        "headingConceptSource": "Abbreviation",
+        "displayOrder": 20,
+        "dashboardConfig": {
+          "groupByConcept": "AE Form, AE term comprehensive list",
+          "templateName": "Adverse Events Template",
+          "conceptNames": [
+            "AE Form, Other AE term",
+            "AE Form, AE ID number",
+            "AE Form, SAE Case Number",
+            "AE Form, Date of AE onset",
+            "AE Form, Date of AE report",
+            "AE Form, AE Grade",
+            "AE Form, AE review date",
+            "AE Form, AE severity at review",
+            "AE Form, Maximum severity of AE",
+            "AE Form, Date of AE Outcome",
+            "AE Form, AE outcome"
+          ]
+        }
+      },
+      "coMorbidities": {
+        "type": "custom",
+        "displayOrder": 4,
+        "displayType": "Full-Page",
+        "config": {
+          "title": "Сопутствующие заболевания",
+          "translationKey": "SUMMARY_TITLE_COMORBIDITIES",
+          "template": "<co-morbidities></co-morbidities>"
+        }
+      },
+      "treatmentInfo": {
+        "isObservation": true,
+        "displayType": "Half-Page",
+        "dashboardConfig": {
+          "showGroupDateTime": false,
+          "persistOrderOfConcepts": true,
+          "conceptNames": [
+            "TUBERCULOSIS DRUG TREATMENT START DATE",
+            "Current month of treatment",
+            "Treatment Duration",
+            "TI, What is the situation of the patient?",
+            "TI, Additional comments (about why the patient is being started on new TB drugs)",
+            "TI, Indication for new TB drugs",
+            "Tuberculosis treatment end date",
+            "EOT, Outcome",
+            "6m PTO, 6 month post treatment outcome"
+          ]
+         }
+        },
+        "casedefinition": {
+        "isObservation": true,
+        "displayType": "Halfl-Page",
+        "dashboardConfig": {
+          "showGroupDateTime": false,
+          "conceptNames": [
+            "Baseline, WHO registration group",
+            "Baseline, Disease site",
+            "Baseline, Drug resistance",
+            "Baseline, Subclassification for confimed drug resistant cases"
+          ]
+        },
+        "displayOrder": 1,
+        "translationKey": "SUMMARY_TITLE_CASE_DEFINITION"
+      },
+      "hospitalInfo": {
+        "translationKey": "Current Hospitalization",
+        "displayType": "Full-Page",
+        "type": "obsToObsFlowSheet",
+        "headingConceptSource": "Abbreviation",
+        "dataConceptSource": "Abbreviation",
+        "displayOrder": 2,
+        "dashboardConfig": {
+          "type": "CurrentHospitalizationExtension",
+          "isEditable": false,
+          "groupByConcept": "HAN, Hospital admission date",
+          "templateName": "Hospital Admission Notification Template",
+          "conceptNames": [
+            "Treatment Facility Name",
+            "Other treatment facility name",
+            "Facility patient ID",
+            "HAN, Admission diagnosis"
+          ]
+        }
+      },
+        "PasthospitalInfo": {
+        "title": "Past Hospitalization Details",
+        "displayType": "Full-Page",
+        "type": "obsToObsFlowSheet",
+        "headingConceptSource": "Abbreviation",
+        "dataConceptSource": "Abbreviation",
+        "displayOrder": 2,
+        "dashboardConfig": {
+          "groupByConcept": "HDS, Hospital admission date",
+          "templateName": "Hospital Discharge Summary Template",
+          "obsDelimiter": "\n",
+          "conceptNames": [
+            "HDS, Hospital admission date",
+            "HDS, Hospital discharge date",
+            "HDS, Reason for hospitalization",
+            "HDS, Other reason for hospitalization",
+            "HDS, Type of TB related surgery",
+            "HDS, Side of TB related surgery",
+            "HDS, Indication of TB related surgery",
+            "HDS, Discharge diagnosis"
+          ]
+        }
+      },
+	"seriousAdverseEvents": {
+        "translationKey": "SUMMARY_TITLE_SERIOUS_ADVERSE_EVENTS",
+        "type": "obsToObsFlowSheet",
+        "displayType": "Full-Page",
+        "headingConceptSource": "Abbreviation",
+        "displayOrder": 21,
+        "dashboardConfig": {
+          "groupByConcept": "SAE Form, SAE term comprehensive AE list",
+          "templateName": "Serious Adverse Events Template",
+          "conceptNames": [
+	    "SAE Form, Other SAE term",
+            "SAE Form, SAE ID number",
+            "SAE Form, AE ID if previously reported as AE",
+            "SAE Form, Event onset date",
+            "SAE Form, Date of SAE report",
+            "SAE Form, Date event became serious",
+            "SAE Form, SAE severity grade",
+            "SAE Form, SAE review date",
+            "SAE Form, SAE severity at review",
+            "SAE Form, Maximum severity of SAE",
+            "SAE Form, Event end date",
+            "SAE Form, SAE outcome",
+            "SAE Form, Related test",
+	    "SAE form, other related test"
+	    
+          ]
+        }
+      },
+ "LabBiochemistry": {
+        "displayType": "Full-Page",
+        "translationKey": "SUMMARY_TITLE_LAB_BIOCHEMISTRY",
+        "type": "obsToObsFlowSheet",
+        "headingConceptSource": "Abbreviation",
+        "dataConceptSource": "Abbreviation",
+        "displayOrder": 18,
+        "dashboardConfig": {
+          "pivotOn": "row",
+          "templateName": "Lab Results Biochemistry Template",
+          "groupByConcept": "Specimen Collection Date",
+          "type": "DstExtension",
+          "conceptNames": [
+            "Lab, SERUM POTASSIUM Data",
+            "Lab, Magnesium test result Data",
+            "Lab, Ionized Calcium other Data",
+            "Lab, Total Calcium data units",
+            "Lab, BLOOD UREA NITROGEN Data",
+            "Lab, Creatinine other Data",
+            "Lab, Glucose other Data",
+            "Lab, Fasting blood glucose measurement (mg/dL) Data",
+            "Lab, glycosylated hemoglobin A measurement Data",
+            "Lab, Thyroid stimulating hormone test Data",
+            "Lab, Lipase test result Data",
+            "Lab, SERUM GLUTAMIC-OXALOACETIC TRANSAMINASE Data",
+            "Lab, SERUM GLUTAMIC-PYRUVIC TRANSAMINASE Data",
+            "Lab, TOTAL BILIRUBIN Data",
+            "Lab, SERUM ALBUMIN Data"
+          ]
+        }
+      },
+      "LabResultsSerologyTemplate": {
+        "displayType": "Full-Page",
+        "translationKey": "SUMMARY_TITLE_LAB_SEROLOGY",
+        "type": "obsToObsFlowSheet",
+        "headingConceptSource": "Abbreviation",
+        "dataConceptSource": "Abbreviation",
+        "displayOrder": 19,
+        "dashboardConfig": {
+          "pivotOn": "row",
+          "templateName": "Lab Results Serology Template",
+          "groupByConcept": "Specimen Collection Date",
+          "type": "DstExtension",
+          "conceptNames": [
+            "Lab, Hepatitis B antigen test result",
+            "Lab, Hepatitis C antibody test result",
+            "CD4 COUNT",
+            "HIV VIRAL LOAD",
+            "Hep C, If undetactable is yes, Viral load result"
+          ]
+        }
+      },
+ "pasttbhistory": {
+        "isObservation": true,
+        "displayType": "Full-Page",
+        "dashboardConfig": {
+          "showGroupDateTime": false,
+          "conceptNames": [
+            "Baseline, Has the patient ever been treated for TB in the past?",
+	    "Baseline, If Yes, What was the year of the patients start of first TB treatment Details",
+            "Baseline, Treatment for drug-susceptible TB",
+            "Baseline, How many drug-susceptible TB treatments",
+            "Baseline, Treatment for drug-resistant TB",
+            "Baseline, How many drug-resistant TB treatments",
+            "Baseline, List of drugs taken for more than a month",
+            "Baseline, Other drug taken for more than a month"
+          ]
+        }
+      }
+}
+}
+}
